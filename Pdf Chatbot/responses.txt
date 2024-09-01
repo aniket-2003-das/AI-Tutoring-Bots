@@ -1,0 +1,189 @@
+The provided content is from a physics textbook and it discusses the concept of units and measurement. 
+It explains that physics is a quantitative science based on the measurement of physical quantities. 
+The fundamental or base quantities in physics are length, mass, time, electric current, thermodynamic temperature, amount of substance, 
+and luminous intensity. Each base quantity is defined in terms of a reference standard called a unit. 
+The units for the base quantities are called fundamental or base units. 
+Other physical quantities, derived from the base quantities, can be expressed as a combination of the base units and are called derived units. 
+The International System of Units (SI) is the internationally accepted unit system and is widely used throughout the world. 
+The content also includes examples of calculations involving units and significant figures.
+
+Using embedded DuckDB without persistence: data will be transient
+{
+  "description": "Teacher's Quiz on Units and Measurements",
+  "questions": [
+    {
+      "questionName": "1. The volume of a cube of side 1 cm is equal to...",
+      "option1": "1 mm³",
+      "option2": "1 cm³",
+      "option3": "1 m³",
+      "option4": "1 km³",
+      "explanation": "The volume of a cube is calculated by multiplying the length of one side by itself twice. Therefore, the volume of a cube with a side length of 1 cm is equal to 1 cm³.",
+      "answer": "option2",
+      "type": "MCQ"
+    },
+    {
+      "questionName": "2. The surface area of a solid cylinder of radius 2.0 cm and height 10.0 cm is equal to...",
+      "option1": "40 cm²",
+      "option2": "80 cm²",
+      "option3": "120 cm²",
+      "option4": "160 cm²",
+      "explanation": "The surface area of a solid cylinder is calculated by adding the areas of the two circular bases and the lateral surface area. For the given cylinder, the surface area is 2πrh + 2πr² = 2π(2.0 cm)(10.0 cm) + 2π(2.0 cm)² = 40π + 8π = 48π cm².",
+      "answer": "option1",
+      "type": "MCQ"
+    },
+    {
+      "questionName": "3. A vehicle moving with a speed of 18 km/h covers... meters in 1 second.",
+      "option1": "5 m",
+      "option2": "10 m",
+      "option3": "15 m",
+      "option4": "20 m",
+      "explanation": "To convert km/h to m/s, divide the speed by 3.6. Therefore, a vehicle moving with a speed of 18 km/h covers 18/3.6 = 5 m in 1 second.",
+      "answer": "option1",
+      "type": "MCQ"
+    },
+    {
+      "questionName": "4. The relative density of lead is 11.3. Its density is... g/cm³ or ... kg/m³.",
+      "option1": "11.3 g/cm³, 11300 kg/m³",
+      "option2": "1.13 g/cm³, 1130 kg/m³",
+      "option3": "0.113 g/cm³, 113 kg/m³",
+      "option4": "0.0113 g/cm³, 11.3 kg/m³",
+      "explanation": "Relative density is the ratio of the density of a substance to the density of a reference substance. The density of lead is 11.3 times the density of water, which is 1 g/cm³ or 1000 kg/m³. Therefore, the density of lead is 11.3 g/cm³ or 11300 kg/m³.",
+      "answer": "option1",
+      "type": "MCQ"
+    },
+    {
+      "questionName": "5. 1 kg·m²/s² is equal to... g·cm²/s².",
+      "option1": "1000 g·cm²/s²",
+      "option2": "100 g·cm²/s²",
+      "option3": "10 g·cm²/s²",
+      "option4": "1 g·cm²/s²",
+      "explanation": "To convert kg·m²/s² to g·cm²/s², multiply the value by 1000. Therefore, 1 kg·m²/s² is equal to 1000 g·cm²/s².",
+      "answer": "option1",
+      "type": "MCQ"
+    },
+    {
+      "questionName": "6. 1 meter is equal to... light years.",
+      "option1": "9.461 × 10¹⁵ light years",
+      "option2": "9.461 × 10¹⁶ light years",
+      "option3": "9.461 × 10¹⁷ light years",
+      "option4": "9.461 × 10¹⁸ light years",
+      "explanation": "The speed of light in vacuum is approximately 3 × 10⁸ m/s. Therefore, the distance between the Sun and the Earth, which takes 8 minutes and 20 seconds for light to cover, is 3 × 10⁸ m/s × 500 s = 1.5 × 10¹¹ m. This distance is equal to 1.5 × 10¹¹ / (9.461 × 10¹⁵) = 1.587 light years (approximately).",
+      "answer": "option1",
+      "type": "MCQ"
+    },
+    {
+      "questionName": "7. Which of the following is the most precise device for measuring length?",
+      "option1": "Ruler graduated in millimeters",
+      "option2": "Vernier caliper",
+      "option3": "Micrometer screw gauge",
+      "option4": "Measuring tape",
+      "explanation": "The most precise device for measuring length is the micrometer screw gauge. It can measure lengths with high accuracy and precision, typically up to 0.01 mm.",
+      "answer": "option3",
+      "type": "MCQ"
+    },
+    {
+      "questionName": "8. True or False: To call a dimensional quantity 'large' or 'small' is meaningless without specifying a standard for comparison.",
+      "option1": "True",
+      "option2": "False",
+      "explanation": "The statement is true. Without specifying a standard for comparison, the terms 'large' or 'small' are subjective and do not provide any meaningful information about the dimensional quantity.",
+      "answer": "True",
+      "type": "True/False"
+    },
+    {
+      "questionName": "9. True or False: Atoms are very small objects.",
+      "option1": "True",
+      "option2": "False",
+      "explanation": "The statement is true. Atoms are the basic building blocks of matter and are extremely small in size, with diameters on the order of picometers (10⁻¹² m).",
+      "answer": "True",
+      "type": "True/False"
+    },
+    {
+      "questionName": "10. True or False: A jet plane moves with great speed.",
+      "option1": "True",
+      "option2": "False",
+      "type": "True/False"
+    },
+    {
+      "questionName": "15. The length, breadth, and thickness of a rectangular sheet of metal are 4.234 m, 1.005 m, and 2.01 cm respectively. Give the area and volume of the sheet to correct significant figures.",
+      "option1": "Area: 4.25 m², Volume: 0.085 m³",
+      "
+
+{
+  "physical quantities": "Measurements or properties of physical objects or phenomena, such as length, mass, and temperature.",  "plasma": "A state of matter in which atoms are ionized and exist as charged particles.",
+  "principle of homogeneity": "The principle that states that physical quantities with different dimensions cannot be added or subtracted from each other.",
+  "product type of dependence": "A way of expressing the dependence of a physical quantity on multiple variables as a product of their powers.",
+  "rough estimate": "An approximate calculation or guess based on limited information or observations.",
+  "solid": "A state of matter characterized by a definite shape and volume.",
+  "substance": "A particular type of matter with uniform properties.",
+  "temperature": "A measure of the average kinetic energy of the particles in a substance.",
+  "time period": "The duration of one complete cycle or oscillation of a periodic motion.",
+  "velocity": "The rate of change of displacement of an object with respect to time.",
+  "wind speed": "The rate at which air moves horizontally past a given point."
+}
+
+
+
+  "flashcards": [
+    {
+      "Question": "What is the mass density of the Sun?",
+      "Response": "The mass density of the Sun is not provided in the given context."
+    },
+    {
+      "Question": "What is the formula for calculating the diameter of Jupiter?",
+      "Response": "The formula for calculating the diameter of Jupiter is not provided in the given context."
+    },
+    {
+      "Question": "What is the relation between the angle θ and the speed v in the given scenario?",
+      "Response": "The relation between the angle θ and the speed v in the given scenario is tan θ = v."
+    },
+    {
+      "Question": "What is the correct relation between the angle θ and the speed v in the given scenario?",
+      "Response": "The correct relation between the angle θ and the speed v in the given scenario is not provided in the given context."
+    },
+    {
+      "Question": "What is the volume of a cube with a side length of 1 cm?",
+      "Response": "The volume of a cube with a side length of 1 cm is not provided in the given context."
+    },
+    {
+      "Question": "What is the surface area of a solid cylinder with a radius of 2.0 cm and height of 10.0 cm?",
+      "Response": "The surface area of a solid cylinder with a radius of 2.0 cm and height of 10.0 cm is not provided in the given context."
+    },
+    {
+      "Question": "What is the speed of a vehicle moving at 18 km/h?",
+      "Response": "The speed of a vehicle moving at 18 km/h is not provided in the given context."
+    },
+    {
+      "Question": "What is the relative density of lead?",
+      "Response": "The relative density of lead is 11.3."
+    },
+    {
+      "Question": "What is the density of lead in g/cm³?",
+      "Response": "The density of lead in g/cm³ is not provided in the given context."
+    },
+    {
+      "Question": "What is the density of lead in kg/m³?",
+      "Response": "The density of lead in kg/m³ is not provided in the given context."
+    },
+    {
+      "Question": "What is the unit conversion for 1 kg m² s⁻² to g cm² s⁻²?",
+      "Response": "The unit conversion for 1 kg m² s⁻² to g cm² s⁻² is not provided in the given context."
+    },
+    {
+      "Question": "What is the unit conversion for 1 m to light years?",
+      "Response": "The unit conversion for 1 m to light years is not provided in the given context."
+    },
+    {
+      "Question": "What is the unit conversion for 3.0 m/s² to km/h²?",
+      "Response": "The unit conversion for 3.0 m/s² to km/h² is not provided in the given context."
+    },
+    {
+      "Question": "What is the unit conversion for G = 6.67 × 10⁻¹¹ N m² (kg)⁻² to (cm)³ s⁻² g⁻¹?",
+      "Response": "The unit conversion for G = 6.67 × 10⁻¹¹ N m² (kg)⁻² to (cm)³ s⁻² g⁻¹ is not provided in the given context."
+    },
+    {
+      "Question": "What is the magnitude of a calorie in terms of the new units?",
+      "Response": "The magnitude of a calorie in terms of the new units is not provided in the given context."
+    }
+  ]
+
+

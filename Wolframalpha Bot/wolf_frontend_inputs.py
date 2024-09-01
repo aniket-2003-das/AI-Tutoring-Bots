@@ -1,0 +1,1 @@
+query = "what is photosynthesis?"
